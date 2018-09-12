@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/text_menu"
+        android:icon="@drawable/ic_add"
+        android:title="@string/menu_text"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/button_menu"
+        android:title="@string/menu_button" />
+
+    <item
+        android:id="@+id/button_dialog"
+        android:title="@string/menu_dialog" />
+
+    <item
+        android:id="@+id/mais_menu"
+        android:title="@string/outros">
+
+        <menu>
+            <item
+                android:id="@+id/controls_menu"
+                android:title="@string/menu_controls" />
+
+            <item
+                android:id="@+id/snack_menu"
+                android:title="@string/menu_snack" />
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="popupTheme">@style/PopupMenuTheme</item>
+    </style>
+
+    <style name="SuperMaterialTheme" parent="AppTheme">
+
+    </style>
+
+    <!-- Deixa o background do menu da toolbar branco -->
+    <style name="PopupMenuTheme" parent="Base.ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!-- Style para os botoes elevados -->
+    <style name="RaisedButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Style para os botoes flat (sem bordas) -->
+    <style name="FlatButton" parent="Widget.AppCompat.Button.Borderless"></style>
+
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+</resources>
