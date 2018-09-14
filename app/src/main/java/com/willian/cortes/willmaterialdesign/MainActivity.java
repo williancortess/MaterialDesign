@@ -108,6 +108,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             }
+            case R.id.menu_progress:{
+                Intent intent = new Intent(this, ProgressActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

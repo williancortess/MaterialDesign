@@ -5,6 +5,7 @@
     <string name="menu_dialog">Dialog</string>
     <string name="menu_controls">Controls</string>
     <string name="menu_snack">Snackbars</string>
+    <string name="menu_progress">Progress</string>
     <string name="email">Email</string>
     <string name="senha">Senha</string>
     <string name="text_field">Text Field</string>

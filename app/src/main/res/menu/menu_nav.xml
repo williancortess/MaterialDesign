@@ -36,6 +36,11 @@
                 android:icon="@drawable/ic_snack"
                 android:title="@string/menu_snack" />
 
+            <item
+                android:id="@+id/menu_progress"
+                android:icon="@drawable/ic_progress"
+                android:title="@string/menu_progress" />
+
         </menu>
 
 
