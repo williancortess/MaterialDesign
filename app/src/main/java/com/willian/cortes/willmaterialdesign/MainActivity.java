@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -64,6 +65,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             }
+            case R.id.progress_menu:{
+                Intent intent = new Intent(this, ProgressActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.cards_menu:{
+                Intent intent = new Intent(this, CardsActivity.class);
+                startActivity(intent);
+                break;
+            }
 
         }
 
@@ -110,6 +121,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
             case R.id.menu_progress:{
                 Intent intent = new Intent(this, ProgressActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.menu_cards:{
+                Intent intent = new Intent(this, CardsActivity.class);
                 startActivity(intent);
                 break;
             }

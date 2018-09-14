@@ -23,6 +23,7 @@
         <activity android:name="com.willian.cortes.willmaterialdesign.DialogActivity" />
         <activity android:name="com.willian.cortes.willmaterialdesign.SnackActivity" />
         <activity android:name="com.willian.cortes.willmaterialdesign.ProgressActivity" />
+        <activity android:name="com.willian.cortes.willmaterialdesign.CardsActivity" />
     </application>
 
 </manifest>

@@ -41,9 +41,11 @@
                 android:icon="@drawable/ic_progress"
                 android:title="@string/menu_progress" />
 
+            <item
+                android:id="@+id/menu_cards"
+                android:icon="@drawable/ic_cards"
+                android:title="@string/menu_cards" />
+
         </menu>
-
-
     </item>
-
 </menu>

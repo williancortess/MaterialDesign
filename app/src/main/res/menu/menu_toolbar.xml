@@ -28,6 +28,14 @@
             <item
                 android:id="@+id/snack_menu"
                 android:title="@string/menu_snack" />
+
+            <item
+                android:id="@+id/progress_menu"
+                android:title="@string/menu_progress" />
+
+            <item
+                android:id="@+id/cards_menu"
+                android:title="@string/menu_cards" />
         </menu>
 
     </item>

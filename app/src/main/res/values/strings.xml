@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">WillMaterialDesign</string>
     <string name="menu_button">Button</string>
-    <string name="menu_text">Text</string>
+    <string name="menu_text">Text Field</string>
     <string name="menu_dialog">Dialog</string>
     <string name="menu_controls">Controls</string>
     <string name="menu_snack">Snackbars</string>
     <string name="menu_progress">Progress</string>
+    <string name="menu_cards">Cards</string>
     <string name="email">Email</string>
     <string name="senha">Senha</string>
     <string name="text_field">Text Field</string>
@@ -39,4 +40,9 @@
     <string name="item_excluido">ITEM EXCLUIDO</string>
     <string name="fechar">FECHAR</string>
     <string name="snack_fechada">SnackBar foi fechada</string>
+    <string name="exemplo_cardview">Exemplo CardView.</string>
+    <string name="campeao_da_copa">Campeão da Copa do Brasil</string>
+    <string name="geromel_e_kannemann">Geromel e Kannemann</string>
+    <string name="botao_1">BOTAO 1</string>
+    <string name="botao_2">BOTAO 2</string>
 </resources>
