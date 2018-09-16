@@ -30,4 +30,14 @@
         <item name="colorAccent">@color/colorPrimary</item>
     </style>
 
+    <!-- Style do collapsing layout -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SuperAppTheme.NoActionBar" parent="AppTheme.NoActionBar">
+
+    </style>
+
 </resources>

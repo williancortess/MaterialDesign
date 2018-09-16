@@ -129,6 +129,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             }
+            case R.id.menu_collapsing:{
+                Intent intent = new Intent(this, CollapsingActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

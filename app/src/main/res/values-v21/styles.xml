@@ -9,4 +9,9 @@
         <item name="android:backgroundTint">@color/colorPrimary</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
+
+    <style name="SuperAppTheme.NoActionBar" parent="AppTheme.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
 </resources>

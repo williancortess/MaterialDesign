@@ -24,6 +24,11 @@
         <activity android:name="com.willian.cortes.willmaterialdesign.SnackActivity" />
         <activity android:name="com.willian.cortes.willmaterialdesign.ProgressActivity" />
         <activity android:name="com.willian.cortes.willmaterialdesign.CardsActivity" />
+
+        <activity
+            android:name="com.willian.cortes.willmaterialdesign.CollapsingActivity"
+            android:theme="@style/SuperAppTheme.NoActionBar"/>
+
     </application>
 
 </manifest>

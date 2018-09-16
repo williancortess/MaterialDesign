@@ -7,6 +7,7 @@
     <string name="menu_snack">Snackbars</string>
     <string name="menu_progress">Progress</string>
     <string name="menu_cards">Cards</string>
+    <string name="menu_collapsing">CollapsingLayout</string>
     <string name="email">Email</string>
     <string name="senha">Senha</string>
     <string name="text_field">Text Field</string>
@@ -45,4 +46,8 @@
     <string name="geromel_e_kannemann">Geromel e Kannemann</string>
     <string name="botao_1">BOTAO 1</string>
     <string name="botao_2">BOTAO 2</string>
+    <string name="celular">Celular</string>
+    <string name="cel_will">(51) 99999-9999</string>
+    <string name="endereco">Endereço</string>
+    <string name="end_will">Rua Abc 129, Porto Alegre - RS</string>
 </resources>

@@ -46,6 +46,11 @@
                 android:icon="@drawable/ic_cards"
                 android:title="@string/menu_cards" />
 
+            <item
+                android:id="@+id/menu_collapsing"
+                android:icon="@drawable/ic_collapsig"
+                android:title="@string/menu_collapsing" />
+
         </menu>
     </item>
 </menu>
