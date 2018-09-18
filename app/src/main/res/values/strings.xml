@@ -50,4 +50,7 @@
     <string name="cel_will">(51) 99999-9999</string>
     <string name="endereco">Endereço</string>
     <string name="end_will">Rua Abc 129, Porto Alegre - RS</string>
+    <string name="acessar">ACESSAR</string>
+    <string name="titulo">Título</string>
+    <string name="subtitulo">Subtitulo</string>
 </resources>

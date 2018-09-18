@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.willian.cortes.willmaterialdesign">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/SuperMaterialTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activitys.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,16 +19,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.willian.cortes.willmaterialdesign.TextFieldActivity" />
-        <activity android:name="com.willian.cortes.willmaterialdesign.ButtonsActivity" />
-        <activity android:name="com.willian.cortes.willmaterialdesign.SelectionControlsActivity" />
-        <activity android:name="com.willian.cortes.willmaterialdesign.DialogActivity" />
-        <activity android:name="com.willian.cortes.willmaterialdesign.SnackActivity" />
-        <activity android:name="com.willian.cortes.willmaterialdesign.ProgressActivity" />
-        <activity android:name="com.willian.cortes.willmaterialdesign.CardsActivity" />
+        <activity android:name="com.willian.cortes.willmaterialdesign.Activitys.TextFieldActivity" />
+        <activity android:name="com.willian.cortes.willmaterialdesign.Activitys.ButtonsActivity" />
+        <activity android:name="com.willian.cortes.willmaterialdesign.Activitys.SelectionControlsActivity" />
+        <activity android:name="com.willian.cortes.willmaterialdesign.Activitys.DialogActivity" />
+        <activity android:name="com.willian.cortes.willmaterialdesign.Activitys.SnackActivity" />
+        <activity android:name="com.willian.cortes.willmaterialdesign.Activitys.ProgressActivity" />
+        <activity android:name="com.willian.cortes.willmaterialdesign.Activitys.CardsActivity" />
 
         <activity
-            android:name="com.willian.cortes.willmaterialdesign.CollapsingActivity"
+            android:name="com.willian.cortes.willmaterialdesign.Activitys.CollapsingActivity"
             android:theme="@style/SuperAppTheme.NoActionBar"/>
 
     </application>

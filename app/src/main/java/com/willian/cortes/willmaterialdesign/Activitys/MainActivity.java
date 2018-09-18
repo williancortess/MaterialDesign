@@ -1,4 +1,4 @@
-package com.willian.cortes.willmaterialdesign;
+package com.willian.cortes.willmaterialdesign.Activitys;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -8,16 +8,30 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ProgressBar;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+import com.pkmmte.pkrss.Article;
+import com.pkmmte.pkrss.Callback;
+import com.pkmmte.pkrss.PkRSS;
+import com.willian.cortes.willmaterialdesign.Adapters.RecyclerAdapter;
+import com.willian.cortes.willmaterialdesign.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, Callback {
 
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
+
+    private RecyclerView recyclerView;
+    private RecyclerAdapter adapter;
+    private List<Article> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +48,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         navigationView = findViewById(R.id.navView);
         navigationView.setNavigationItemSelectedListener(this);
+
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new RecyclerAdapter(list);
+        recyclerView.setAdapter(adapter);
+
+        PkRSS.with(this).load("http://www.androidpro.com.br/feed/").skipCache().callback(this).async();
     }
 
     @Override
@@ -138,5 +159,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onPreload() {
+
+    }
+
+    @Override
+    public void onLoaded(List<Article> newArticles) {
+        list.clear();
+        list.addAll(newArticles);
+        adapter.notifyDataSetChanged();
+
+    }
+
+    @Override
+    public void onLoadFailed() {
+
     }
 }

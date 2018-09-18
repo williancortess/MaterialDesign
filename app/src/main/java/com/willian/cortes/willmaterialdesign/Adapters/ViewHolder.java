@@ -1,10 +1,12 @@
-package com.willian.cortes.willmaterialdesign;
+package com.willian.cortes.willmaterialdesign.Adapters;
 
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.willian.cortes.willmaterialdesign.R;
 
 public class ViewHolder extends RecyclerView.ViewHolder {
     public ImageView image;

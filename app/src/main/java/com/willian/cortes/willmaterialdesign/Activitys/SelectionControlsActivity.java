@@ -1,4 +1,4 @@
-package com.willian.cortes.willmaterialdesign;
+package com.willian.cortes.willmaterialdesign.Activitys;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.willian.cortes.willmaterialdesign.R;
 
 public class SelectionControlsActivity extends AppCompatActivity{
     private ActionBar actionBar = null;
