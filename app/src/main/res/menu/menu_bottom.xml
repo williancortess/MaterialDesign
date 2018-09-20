@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_text"
+        android:title="@string/menu_text"
+        android:icon="@drawable/ic_text" />
+
+    <item android:id="@+id/menu_cards"
+        android:title="@string/menu_cards"
+        android:icon="@drawable/ic_cards" />
+
+    <item android:id="@+id/collapsing_menu"
+        android:title="@string/menu_collapsing"
+        android:icon="@drawable/ic_collapsig" />
+
+</menu>

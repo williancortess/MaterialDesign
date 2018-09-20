@@ -2,6 +2,7 @@ package com.willian.cortes.willmaterialdesign.Activitys;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -23,7 +24,7 @@ import com.willian.cortes.willmaterialdesign.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, Callback {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, Callback, BottomNavigationView.OnNavigationItemSelectedListener {
 
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private RecyclerView recyclerView;
     private RecyclerAdapter adapter;
     private List<Article> list = new ArrayList<>();
+
+    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +58,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView.setAdapter(adapter);
 
         PkRSS.with(this).load("http://www.androidpro.com.br/feed/").skipCache().callback(this).async();
+
+        bottomNavigationView = findViewById(R.id.bottomNav);
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
 
     @Override
@@ -93,6 +99,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
             case R.id.cards_menu:{
                 Intent intent = new Intent(this, CardsActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.collapsing_menu:{
+                Intent intent = new Intent(this, CollapsingActivity.class);
                 startActivity(intent);
                 break;
             }
@@ -150,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             }
-            case R.id.menu_collapsing:{
+            case R.id.collapsing_menu:{
                 Intent intent = new Intent(this, CollapsingActivity.class);
                 startActivity(intent);
                 break;

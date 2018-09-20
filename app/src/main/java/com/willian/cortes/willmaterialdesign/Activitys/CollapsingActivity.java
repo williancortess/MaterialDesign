@@ -2,6 +2,7 @@ package com.willian.cortes.willmaterialdesign.Activitys;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -10,6 +11,7 @@ import android.view.MenuItem;
 import com.willian.cortes.willmaterialdesign.R;
 
 public class CollapsingActivity extends AppCompatActivity{
+    private ActionBar actionBar = null;
     private Toolbar toolbar;
 
     @Override
@@ -20,7 +22,9 @@ public class CollapsingActivity extends AppCompatActivity{
         toolbar = findViewById(R.id.toolbar_collapsing);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setTitle(getResources().getString(R.string.menu_collapsing));
     }
 
     @Override

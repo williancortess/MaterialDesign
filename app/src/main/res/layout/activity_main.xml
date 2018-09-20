@@ -8,7 +8,6 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-
     <LinearLayout
         android:id="@+id/layout_toolbar"
         android:layout_width="match_parent"
@@ -17,12 +16,26 @@
 
         <include layout="@layout/toolbar" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+            android:layout_height="match_parent">
 
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/bottomNav"
+                android:layout_alignParentTop="true" />
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottomNav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                app:menu="@menu/menu_bottom"
+                app:theme="@style/CustomBottomNav" />
+        </RelativeLayout>
+    </LinearLayout>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navView"
@@ -31,5 +44,6 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/menu_nav" />
+
 
 </android.support.v4.widget.DrawerLayout>

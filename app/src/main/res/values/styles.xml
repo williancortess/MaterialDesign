@@ -40,4 +40,12 @@
 
     </style>
 
+    <!-- Style do Bottom Navigation -->
+    <style name="CustomBottomNav" parent="Widget.Design.BottomNavigationView">
+        <item name="android:background">?android:attr/windowBackground</item>
+        <!--<item name="android:background">@color/colorPrimaryDark</item>
+        <item name="itemTextColor">@android:color/white</item>
+        <item name="itemIconTint">@android:color/white</item>-->
+    </style>
+
 </resources>

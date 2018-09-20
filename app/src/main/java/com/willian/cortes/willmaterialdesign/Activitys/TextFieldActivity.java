@@ -33,7 +33,7 @@ public class TextFieldActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle(getResources().getString(R.string.text_field));
+        actionBar.setTitle(getResources().getString(R.string.menu_text));
 
         edEmail =  findViewById(R.id.ed_email);
         edSenha  = findViewById(R.id.ed_senha);
